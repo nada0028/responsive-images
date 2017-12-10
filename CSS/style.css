@@ -1,0 +1,125 @@
+*{
+   padding: 0;
+    margin: 0;  
+}
+
+body{ 
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+ul{
+    list-style: none;
+    padding: 20px;
+}
+
+ul li{
+    float: left;
+    margin: 1%;
+    text-align: center;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+}
+
+picture {
+    max-width: 90%;
+}
+
+img {
+    max-width: 90%;
+}
+
+@media all and (max-width: 600px){
+    ul li {
+        width: 98%
+    }
+}
+
+
+@media all and (min-width: 600px) and (max-width: 1200px){
+    ul li {
+        width: 48%;
+    }
+}
+
+
+@media all and (min-width: 1200px){
+    ul li {
+        width: 23%;
+    }
+}
+
+img:hover{
+    -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    cursor: pointer;
+}
+
+@-webkit-keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+       transform: translateX(-5px);
+    } 
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
